@@ -2,7 +2,7 @@ let areaMensaje = document.getElementById("areaMensaje");
 let areaTexto = document.getElementById("areaTexto");
 
 function ecambio(){
-    let texto = document.getElementById("texto1").value;
+    let texto = document.getElementById("texto1").value.toLowerCase();
     let txtcif = texto.replace(/e/igm,"enter");
      txtcif = txtcif.replace(/o/igm,"ober");
      txtcif = txtcif.replace(/i/igm,"imes");
@@ -12,7 +12,7 @@ function ecambio(){
 }
 
 function dcambio(){
-    let texto = document.getElementById("texto1").value;
+    let texto = document.getElementById("texto1").value.toLowerCase();
     let txtcif = texto.replace(/enter/igm,"e");
      txtcif = txtcif.replace(/ober/igm,"o");
      txtcif = txtcif.replace(/imes/igm,"i");
