@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/index.css">
+	<script src="https://kit.fontawesome.com/216116f202.js" crossorigin="anonymous"></script>
+	<title>Encriptador de Textos</title>
+	<link rel="icon" type="image/x-icon" href="./img/favicon.png">
+</head>
+<body>
+	<header class="cabecera">
+		<section class="contenedorLogo">
+			<img  class="logo" src="./img/logo.png" title="Logo" alt="Imagen de Logo">
+		</section>
+		<section class="titulo">
+			<h1>Encriptador de Textos</h1>
+		</section>
+	</header>
+
+	<main class="contenedor">
+		<section class="entrada">
+				<textarea class="texto" name="" id="texto1" cols="30" rows="10" placeholder="Ingrese Texto Aqui"></textarea>
+				<section class="contenedorBotones">
+					<button type="button" onclick="encriptar()">Encriptar</button>
+					<button type="button" onclick="desenciptar()">Desenciptar</button>
+				</section>
+		</section>
+		<aside class="vistaDerecha">
+		<div class="areaMensaje " id="areaMensaje">
+			<img class="imagenMensaje" src="./img/texto.jpg" alt="">
+			<h2>Ningun mensaje encontrado</h2>
+		</div>
+		<div class="areaTexto oculto" id="areaTexto">
+			<textarea class="texto texto2" name="" id="texto2" cols="30" rows="10">Texto a reemplazar</textarea>
+			<section class="contenedorBotones">
+				<button type="button" onclick="copiar()">Copiar</button>
+			</section>
+		</div>
+		</aside>
+		
+	</main>
+
+	<footer class="pie">
+		<section class="leyenda">
+			<h3>&copy; 2023</h3>
+			<h3>Creado por Roman Gabriel Sebastian</h3>
+			<a href="https://www.linkedin.com/in/romangabrielsebastian/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+			<a href="https://github.com/MagoGaro" target="_blank"><i class="fa-brands fa-github"></i></a>
+		</section>
+		<span>GRUPO: 5 | CHALLENGE: Encriptador de Texto</span>
+	</footer>
+
+	<script src="./js/index.js"></script>
+</body>
+</html>
